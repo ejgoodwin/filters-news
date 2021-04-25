@@ -3,7 +3,7 @@ This project uses the Guardian API to fetch news stories that are displayed in a
 
 Screenshots of the default state, filtered & highlighted state, and the hover state are shown below:
 
-![Screenshot of project](images/readme-example.png)
+![Screenshot of project](src/images/readme-example.png)
 
 API from [Open Platform](https://open-platform.theguardian.com/)
 
