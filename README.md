@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Filter and Highlight News Stories
+This project uses the Guardian API to fetch news stories that are displayed in a grid layout. The news stories are filtered when  a key word is entered in the search bar. Both the heading and the trail text are used in the filer functionality. The search term is highlighted in green to show where the term appears.
+
+Screenshots of the default state, filtered & highlighted state, and the hover state are shown below:
+
+![Screenshot of project](images/readme-example.png)
+
+API from [Open Platform](https://open-platform.theguardian.com/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
