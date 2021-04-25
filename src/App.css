@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+	color: #21272f;
+}
+
+img {
+	max-width: 100%;
+}
+
+.app-header {
+	background: #15222f;
+	color: white;
+	padding: 2rem;
+}
+
+.app-header h1 {
+	margin-top: 0;
+}
+
+.search-label {
+	font-weight: 600;
+}
+
+.search-input-container {
+	display: flex;
+}
+
+.search-clear-button {
+	align-self: flex-end;
+	background: none;
+	border: 0;
+	color: white;
+	display: none;
+	font-size: 1rem;
+	margin-left: .25rem;
+	opacity: .6;
+	text-decoration: underline;
+}
+
+.search-clear-button:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+.search-clear-button.search-clear-button__show {
+	display: block;
+}
+
+.search {
+	border: 1px solid lightgrey;
+	border-radius: .25rem;
+	display: block;
+	font-size: 1rem;
+	padding: .5rem;
+	margin-top: .5rem;
+	width: 250px;
+}
+
+.app-main {
+	background: #efefef;
+	padding: 2rem;
+}
+
+.news-article.show {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.news-article.hide {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news-article {
+	background: white;
+	border-top: 1px solid #15222f;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.article-heading {
+	margin-top: 0;
+}
+
+.article-heading-link {
+	color: #21272f;
+	text-decoration: none;
+}
+
+.article-heading-link:hover {
+	color: #1061c7;
+}
+
+mark {
+	background: #c5efb8;
+}
+
+.article-trail-text {
+	line-height: 1.4;
+	margin-bottom: .25rem;
+}
+
+.article-date {
+	color: #6a6b6d;
+	font-size: .8rem;
+}
+
+.article-button {
+	align-self: flex-start;
+	background: #daefff;
+	border-radius: .25rem;
+	color: #012a5f;
+	padding: .25rem .5rem;
+	margin-top: auto;
+	text-decoration: none;
+}
+
+.article-button:hover {
+	background: #bee1fb;
+	color: #000d1d;
 }
